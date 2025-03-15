@@ -156,7 +156,7 @@ fetch("<% options.saveUrl %>", {
 });
 ```
 
-**Request Command**
+**Request Command: /receivedRequest**
 
 ```javascript
 //message to admin on new request
@@ -168,7 +168,7 @@ var txt = `<b>🚀 New Game Request Received
 
 🔸 Game Name: ${options.game_name}</b>`
 
-#Replace AdminID with your actual telegram id in /receivedRequest command
+//Replace AdminID with your actual telegram id
 var adminId = "#AdminID";
 
 Api.sendMessage({ chat_id: adminId, text: txt, parse_mode: "HTML" })
